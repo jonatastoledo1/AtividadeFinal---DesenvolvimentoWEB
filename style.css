@@ -1,0 +1,138 @@
+/* Estilo Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f1e8;
+  color: #292d2a;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #f5f1e8;
+  padding: 25px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d9d8c8;
+}
+.logo h1 {
+  color: #34473b;
+  font-size: 24px;
+}
+.logo p {
+  color: #73836a;
+  font-size: 13px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.menu a {
+  color: #34473b;
+  font-weight: bold;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+.menu a:hover {
+  color: #73836a;
+}
+
+/* Botões */
+.botao {
+  display: inline-block;
+  background-color: #34473b;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+.botao:hover {
+  background-color: #73836a;
+  transform: translateY(-4px);
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #34473b;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+.rodape p {
+  margin-bottom: 5px;
+}
+.rodape p:last-child {
+  color: #d9d8c8;
+  font-size: 14px;
+}
+
+/* Estilos compartilhados seções */
+.numero-secao {
+  color: #526056;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.descricao-secao {
+  color: #526056;
+  margin-bottom: 35px;
+}
+
+/* Animação */
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .cabecalho {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .cabecalho {
+    padding: 20px;
+  }
+  .logo {
+    text-align: center;
+  }
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .menu a {
+    font-size: 14px;
+  }
+  .botao {
+    padding: 12px 20px;
+  }
+}

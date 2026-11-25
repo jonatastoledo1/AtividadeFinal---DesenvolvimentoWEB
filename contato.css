@@ -1,0 +1,218 @@
+/* Introdução */
+.introducao-contato {
+  padding: 90px 10%;
+  animation: surgir 0.8s ease;
+}
+.introducao-contato h2 {
+  font-family: Georgia, serif;
+  font-size: 52px;
+  line-height: 1.2;
+  color: #34473b;
+  margin-bottom: 25px;
+}
+.introducao-contato > p:not(.numero-capitulo) {
+  max-width: 800px;
+  color: #526056;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Seções */
+.redes-sociais,
+.secao-formulario,
+.encerramento {
+  padding: 70px 10%;
+}
+.redes-sociais h2,
+.secao-formulario h2,
+.encerramento h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  color: #34473b;
+  margin-bottom: 25px;
+}
+
+/* Redes Sociais */
+.redes-sociais {
+  background-color: #e9e7dc;
+}
+.grade-redes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.card-rede {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #d9d8c8;
+  border-radius: 10px;
+  padding: 30px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.card-rede:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.numero-rede {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #526056;
+  margin-bottom: 15px;
+}
+.card-rede h3 {
+  color: #34473b;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.card-rede p {
+  color: #526056;
+  margin-bottom: 25px;
+}
+.link-rede {
+  color: #34473b;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: auto;
+  transition: color 0.3s;
+}
+.link-rede:hover {
+  color: #73836a;
+}
+
+/* Formulário */
+.formulario {
+  max-width: 800px;
+  background-color: #ffffff;
+  border: 1px solid #d9d8c8;
+  border-radius: 12px;
+  padding: 35px;
+}
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+.campo-formulario label {
+  color: #34473b;
+  font-weight: bold;
+  font-size: 15px;
+}
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+  width: 100%;
+  padding: 14px;
+  background-color: #f5f1e8;
+  color: #292d2a;
+  border: 1px solid #d9d8c8;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+  outline: none;
+  border-color: #73836a;
+  box-shadow: 0 0 0 3px rgba(115, 131, 106, 0.2);
+}
+.campo-formulario textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+.formulario .botao {
+  margin-top: 0;
+}
+.contador {
+  color: #526056;
+  font-size: 12px;
+  text-align: right;
+}
+.retorno-formulario {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.retorno-formulario:empty {
+  display: none;
+}
+.retorno-formulario.erro {
+  background-color: #fbe7e7;
+  color: #9c3030;
+  padding: 12px;
+  border-radius: 6px;
+}
+.retorno-formulario.sucesso {
+  background-color: #e1e8db;
+  color: #34473b;
+  padding: 12px;
+  border-radius: 6px;
+}
+.aviso-formulario {
+  color: #526056;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/* Encerramento */
+.encerramento {
+  background-color: #e1e8db;
+  text-align: center;
+}
+.encerramento p {
+  max-width: 750px;
+  color: #526056;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0 auto 20px;
+}
+
+/* Responsividade do Tablet */
+@media (max-width: 900px) {
+  .introducao-contato {
+    padding: 70px 8%;
+  }
+  .introducao-contato h2 {
+    font-size: 42px;
+  }
+}
+
+/* Responsividade do Celular */
+@media (max-width: 600px) {
+  .introducao-contato,
+  .redes-sociais,
+  .secao-formulario,
+  .encerramento {
+    padding: 45px 25px;
+  }
+  .introducao-contato h2 {
+    font-size: 34px;
+  }
+  .introducao-contato > p:not(.numero-capitulo) {
+    font-size: 16px;
+  }
+  .redes-sociais h2,
+  .secao-formulario h2,
+  .encerramento h2 {
+    font-size: 28px;
+  }
+  .grade-redes {
+    grid-template-columns: 1fr;
+  }
+  .card-rede {
+    padding: 25px;
+  }
+  .formulario {
+    padding: 20px;
+  }
+  .formulario .botao {
+    width: 100%;
+  }
+}

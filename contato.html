@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonatas Toledo | Contato</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contato.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="logo">
+        <h1>Jonatas Toledo | Meu Portfólio Acadêmico</h1>
+        <p>Meu espaço de aprendizado.</p>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="trajetoria.html">Minha trajetória</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="introducao-contato">
+        <p class="numero-capitulo">03 / Contato</p>
+        <h2>Vamos conversar?</h2>
+        <p>
+          Acredito que compartilhar conhecimentos e experiências também faz
+          parte do processo de aprendizagem.
+        </p>
+        <p>
+          Este espaço foi criado para facilitar o contato com pessoas que
+          compartilham interesses pela tecnologia, pela programação e pelo
+          desenvolvimento de novas ideias.
+        </p>
+      </section>
+
+      <section class="redes-sociais">
+        <p class="numero-secao">01 / Minhas redes</p>
+        <h2>Onde me encontrar.</h2>
+        <p class="descricao-secao">
+          Conheça minhas redes e acompanhe um pouco da minha trajetória
+          acadêmica e dos meus aprendizados.
+        </p>
+
+        <div class="grade-redes">
+          <article class="card-rede">
+            <span class="numero-rede">01.</span>
+
+            <h3>GitHub</h3>
+            <p>
+              Meu espaço para organizar códigos, atividades acadêmicas e futuros
+              projetos, registrando minha evolução na programação.
+            </p>
+            <a
+              href="https://github.com/jonatastoledo1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-rede"
+            >
+              Acessar GitHub →
+            </a>
+          </article>
+
+          <article class="card-rede">
+            <span class="numero-rede">02.</span>
+            <h3>Gmail</h3>
+            <p>
+              Um canal de comunicação para conversar sobre estudos, tecnologia,
+              sugestões, dúvidas e oportunidades de aprendizado.
+            </p>
+            <a
+              href="mailto:jonatas.toledo@edu.unifil.br"
+              class="link-rede"
+              id="link-email"
+            >
+              Enviar e-mail →
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Formulário -->
+      <section class="secao-formulario">
+        <p class="numero-secao">02 / Deixe sua mensagem</p>
+
+        <h2>Escreva para mim.</h2>
+
+        <p class="descricao-secao">
+          Caso queira compartilhar alguma ideia, sugestão ou conversar sobre
+          tecnologia, utilize o formulário abaixo para preparar sua mensagem.
+        </p>
+
+        <form id="formulario-contato" class="formulario" novalidate>
+          <div class="campo-formulario">
+            <label for="nome">Seu nome</label>
+
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite seu nome"
+              required
+            />
+          </div>
+
+          <div class="campo-formulario">
+            <label for="email">Seu e-mail</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+          </div>
+
+          <div class="campo-formulario">
+            <label for="assunto">Assunto</label>
+
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione um assunto</option>
+              <option value="Estudos e programação">
+                Estudos e programação
+              </option>
+              <option value="Tecnologia">Tecnologia</option>
+              <option value="Sugestão">Sugestão</option>
+              <option value="Oportunidade">Oportunidade</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="mensagem">Sua mensagem</label>
+
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="6"
+              maxlength="500"
+              placeholder="Escreva sua mensagem..."
+              required
+            ></textarea>
+
+            <p id="contador" class="contador">0 / 500 caracteres</p>
+          </div>
+
+          <button type="submit" class="botao">Preparar mensagem</button>
+
+          <p
+            id="retorno-formulario"
+            class="retorno-formulario"
+            role="status"
+            aria-live="polite"
+          ></p>
+
+          <p class="aviso-formulario">
+            O formulário prepara sua mensagem e abre seu aplicativo de e-mail. O
+            envio deverá ser confirmado por você.
+          </p>
+        </form>
+      </section>
+
+      <!-- Encerramento -->
+      <section class="encerramento">
+        <h2>Obrigado pela visita!</h2>
+        <p>
+          Este portfólio representa apenas o começo da minha trajetória na
+          Engenharia de Software. Ainda tenho muito a aprender, descobrir e
+          desenvolver.
+        </p>
+        <p>
+          Espero continuar atualizando este espaço conforme avanço nos estudos e
+          construo novas experiências na tecnologia.
+        </p>
+        <a href="index.html" class="botao"> Voltar para o início </a>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <p><b>Trabalho Final - Meu Portfólio.</b></p>
+      <p><b>Aluno:</b> Jonatas de Oliveira Toledo.</p>
+      <p><b>Matrícula:</b> 261072084.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+/* Introdução */
+.introducao-trajetoria {
+  padding: 90px 10%;
+  animation: surgir 0.8s ease;
+}
+.numero-capitulo {
+  color: #526056;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.introducao-trajetoria h2 {
+  font-family: Georgia, serif;
+  font-size: 52px;
+  line-height: 1.2;
+  color: #34473b;
+  margin-bottom: 25px;
+}
+.introducao-trajetoria > p:not(.numero-capitulo) {
+  max-width: 800px;
+  color: #526056;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Seções */
+.formacao,
+.trajetoria-academica,
+.atividades-academicas,
+.proximos-passos {
+  padding: 70px 10%;
+}
+.formacao h2,
+.trajetoria-academica h2,
+.atividades-academicas h2,
+.proximos-passos h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  color: #34473b;
+  margin-bottom: 25px;
+}
+
+/* Formação Acadêmica */
+.formacao {
+  background-color: #e9e7dc;
+}
+.card-formacao {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  background-color: #ffffff;
+  border: 1px solid #d9d8c8;
+  border-radius: 12px;
+  padding: 35px;
+}
+.status-formacao {
+  display: inline-block;
+  background-color: #e1e8db;
+  color: #34473b;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.formacao-informacoes h3 {
+  color: #34473b;
+  font-size: 27px;
+  margin-bottom: 5px;
+}
+.instituicao {
+  color: #526056;
+  font-weight: bold;
+}
+.formacao-informacoes p {
+  margin-bottom: 18px;
+}
+.dados-formacao {
+  background-color: #f5f1e8;
+  padding: 25px;
+  border-radius: 8px;
+}
+.dados-formacao dt {
+  color: #34473b;
+  font-weight: bold;
+  font-size: 14px;
+}
+.dados-formacao dd {
+  color: #526056;
+  margin-bottom: 18px;
+}
+.dados-formacao dd:last-child {
+  margin-bottom: 0;
+}
+
+/* Semana Tecnológica */
+.linha-tempo {
+  max-width: 950px;
+  margin-top: 30px;
+}
+.marco {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #d9d8c8;
+  border-left: 5px solid #73836a;
+  border-radius: 8px;
+  padding: 35px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.marco:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.marco-data {
+  display: inline-block;
+  background-color: #e1e8db;
+  color: #34473b;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.marco h3 {
+  color: #34473b;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.marco p {
+  color: #526056;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* Atividades Acadêmicas */
+.atividades-academicas {
+  background-color: #e9e7dc;
+}
+.grade-atividades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.card-atividade {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 25px;
+  border: 1px solid #d9d8c8;
+  border-radius: 10px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.card-atividade:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.categoria {
+  color: #526056;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.card-atividade h3 {
+  color: #34473b;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+.card-atividade p {
+  color: #526056;
+  margin-bottom: 25px;
+}
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin-top: auto;
+}
+.tecnologias li {
+  background-color: #e1e8db;
+  color: #34473b;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.tecnologias li:hover {
+  background-color: #d0dac8;
+}
+
+/* Próximos Passos */
+.proximos-passos > p:not(.numero-secao) {
+  max-width: 850px;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.proximos-passos h3 {
+  color: #34473b;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.lista-objetivos {
+  max-width: 850px;
+  list-style: none;
+}
+.lista-objetivos li {
+  position: relative;
+  padding: 15px 15px 15px 35px;
+  border-bottom: 1px solid #d9d8c8;
+}
+.lista-objetivos li::before {
+  content: "→";
+  position: absolute;
+  left: 8px;
+  color: #73836a;
+  font-weight: bold;
+}
+
+/* Responsividade do Tablet */
+@media (max-width: 900px) {
+  .introducao-trajetoria {
+    padding: 70px 8%;
+  }
+  .introducao-trajetoria h2 {
+    font-size: 42px;
+  }
+  .card-formacao {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .grade-atividades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsividade do Celular */
+@media (max-width: 600px) {
+  .introducao-trajetoria,
+  .formacao,
+  .trajetoria-academica,
+  .atividades-academicas,
+  .proximos-passos {
+    padding: 45px 25px;
+  }
+  .introducao-trajetoria h2 {
+    font-size: 34px;
+  }
+  .introducao-trajetoria > p:not(.numero-capitulo) {
+    font-size: 16px;
+  }
+  .formacao h2,
+  .trajetoria-academica h2,
+  .atividades-academicas h2,
+  .proximos-passos h2 {
+    font-size: 28px;
+  }
+  .card-formacao {
+    padding: 20px;
+  }
+  .formacao-informacoes h3 {
+    font-size: 23px;
+  }
+  .marco {
+    padding: 25px;
+  }
+  .grade-atividades {
+    grid-template-columns: 1fr;
+  }
+}

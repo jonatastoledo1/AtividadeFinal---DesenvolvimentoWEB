@@ -1,0 +1,216 @@
+/* Apresentação */
+.apresentacao {
+  min-height: 650px;
+  padding: 90px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.apresentacao-texto {
+  flex: 1;
+  max-width: 700px;
+  animation: surgir 0.8s ease;
+}
+.destaque {
+  display: inline-block;
+  background-color: #e1e8db;
+  color: #34473b;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.apresentacao h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #292d2a;
+  margin-bottom: 25px;
+}
+.apresentacao-texto > p:not(.destaque) {
+  font-size: 18px;
+  color: #526056;
+  margin-bottom: 20px;
+}
+
+/* Foto */
+.foto-perfil {
+  width: 300px;
+  flex-shrink: 0;
+  background-color: white;
+  padding: 12px 12px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: rotate(3deg);
+  transition: transform 0.4s;
+}
+.foto-perfil img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+.foto-perfil figcaption {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #526056;
+  margin-top: 15px;
+}
+.foto-perfil:hover {
+  transform: rotate(0deg);
+}
+
+/* Seções */
+.sobre-mim,
+.interesses,
+.ferramentas {
+  padding: 70px 10%;
+}
+.sobre-mim h2,
+.interesses h2,
+.ferramentas h2 {
+  color: #34473b;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+/* Sobre mim */
+.sobre-mim {
+  background-color: #e9e7dc;
+}
+.sobre-mim > p:not(.numero-secao) {
+  max-width: 850px;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Áreas de Interesse */
+.grade-interesses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.card-interesse {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #d9d8c8;
+  border-radius: 10px;
+  padding: 35px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.numero-card {
+  display: block;
+  color: #526056;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.card-interesse h3 {
+  color: #34473b;
+  margin-bottom: 15px;
+}
+.card-interesse p {
+  color: #526056;
+}
+.card-interesse:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Caixa de Ferramentas */
+.ferramentas {
+  background-color: #e9e7dc;
+}
+.grade-ferramentas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.grupo-ferramentas {
+  background-color: #f5f1e8;
+  padding: 25px;
+  border-radius: 10px;
+}
+.grupo-ferramentas h3 {
+  color: #34473b;
+  margin-bottom: 15px;
+}
+.grupo-ferramentas p {
+  color: #526056;
+  margin-bottom: 20px;
+}
+.lista-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+.lista-tecnologias li {
+  background-color: #e1e8db;
+  color: #34473b;
+  padding: 7px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+.lista-tecnologias li:hover {
+  background-color: #d0dac8;
+}
+
+/* Responsividade do Tablet */
+@media (max-width: 900px) {
+  .apresentacao {
+    flex-direction: column;
+    padding: 70px 8%;
+    gap: 40px;
+  }
+  .apresentacao h2 {
+    font-size: 38px;
+  }
+  .grade-ferramentas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsividade do Celular */
+@media (max-width: 600px) {
+  .apresentacao {
+    min-height: auto;
+    padding: 50px 25px;
+  }
+  .apresentacao h2 {
+    font-size: 30px;
+  }
+  .apresentacao-texto > p:not(.destaque) {
+    font-size: 16px;
+  }
+  .foto-perfil {
+    width: 100%;
+    max-width: 260px;
+  }
+  .foto-perfil img {
+    height: 280px;
+  }
+  .sobre-mim,
+  .interesses,
+  .ferramentas {
+    padding: 45px 25px;
+  }
+  .sobre-mim h2,
+  .interesses h2,
+  .ferramentas h2 {
+    font-size: 28px;
+  }
+  .grade-interesses,
+  .grade-ferramentas {
+    grid-template-columns: 1fr;
+  }
+  .card-interesse {
+    padding: 25px;
+  }
+}
